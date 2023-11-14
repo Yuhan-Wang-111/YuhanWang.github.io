@@ -2,6 +2,9 @@
 title = 'project #0'
 date = 2023-10-28T10:16:27-04:00
 draft = false
+[cover]
+  image = "/img/cover/cs_cover.png"
+  alt = "CS projects cover photo"
 +++
 
 This is a placeholder for projects, where I will showcase my CS projects. 
