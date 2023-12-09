@@ -6,20 +6,20 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
-    --theme: rgb(207, 217, 227);
-    --entry: rgb(207, 217, 227);
+    --theme: #A9C0C3;
+    --entry: #b9d0d3;
     --primary: rgb(30, 30, 30);
     --secondary: rgb(108, 108, 108);
-    --tertiary: rgb(207, 217, 227);
+    --tertiary: #45838b; 
     --content: rgb(31, 31, 31);
-    --hljs-bg: rgb(207,217,227);
-    --code-bg: rgb(207, 217, 227);
-    --border: rgb(197, 207, 217);
+    --hljs-bg: #A9C0C3;
+    --code-bg: #A9C0C3;
+    --border: #bdcdd7;
 }
 
 .dark {
     --theme: rgb(7, 57, 23);
-    --entry: rgb(46, 46, 51);
+    --entry: rgb(29, 46, 33);
     --primary: rgb(218, 218, 219);
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(65, 66, 68);
