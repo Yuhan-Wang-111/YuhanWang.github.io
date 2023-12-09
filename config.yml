@@ -1,8 +1,11 @@
 baseURL: "https://yuhanwang.github.io/"
 languageCode: en-us
-theme: "PaperMod"
+theme: 
+  - "PaperMod"
+  - "hugo-embed-pdf-shortcode"
 staticDir:
   - static
+enableInlineShortcodes: true
 
 params:
   profileMode:
@@ -45,14 +48,18 @@ menu:
       name: Projects
       url: /projects/
       weight: 20
+    - identifier: CV
+      name: CV
+      url: /cv/
+      weight: 40
     - identifier: posts
       name: Posts
       url: /posts/
-      weight: 30
+      weight: 40
     - identifier: archive
       name: Archive
       url: /archive/
-      weight: 40
+      weight: 50
 
 outputs:
   home:
