@@ -4,7 +4,7 @@ date: 2023-10-28T14:16:27.000Z
 draft: false
 tag: ["project"]
 cover:
-  image: /img/projects/p0/p0_cover.png
+  image: /img/projects/p0_cover.png
   alt: CS projects cover photo
 ---
 This is a placeholder for projects, where I will showcase my CS projects. 
