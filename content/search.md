@@ -1,6 +1,6 @@
 ---
 title: "Search"
-layout: "search" # is necessary
+layout: "search"
 summary: "search"
 placeholder: "type in keyword to search for content"
 ---
