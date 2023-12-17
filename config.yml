@@ -6,6 +6,7 @@ theme:
 staticDir:
   - static
 enableInlineShortcodes: true
+enableEmoji: true
 
 params:
   profileMode:
@@ -16,17 +17,18 @@ params:
     imageWidth: 120
     imageHeight: 120
   fuseOpts:
-  isCaseSensitive: false
-  shouldSort: true
-  location: 0
-  distance: 1000
-  threshold: 0.4
-  minMatchCharLength: 0
-  keys:
-    - title
-    - permalink
-    - summary
-    - content
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+  ShowPostNavLinks: true
 
   socialIcons:
     - name: "email"
@@ -37,6 +39,8 @@ params:
       url: "https://github.com/Yuhan-Wang-yw"
     - name: "instagram"
       url: "https://www.instagram.com/yaaaarth/"
+    - name: "cv"
+      url: "/content/cv.md"
 
 menu:
   main:
