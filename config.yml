@@ -11,28 +11,16 @@ enableEmoji: true
 params:
   profileMode:
     enabled: true
-    title: "Yuhan Wang's Portfolio"
+    title: "Yuhan Wang"
+    subtitle: "Hey! Welcome to Yuhan's Portfolio side ♡"
     imageUrl: "/img/profile/profile.png"
     imageTitle: "Yuhan_Embroidery_profile_photo"
     imageWidth: 120
     imageHeight: 120
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys:
-      - title
-      - permalink
-      - summary
-      - content
-  ShowPostNavLinks: true
 
   socialIcons:
     - name: "email"
-      url: "ywang70@smith.edu"
+      url: "mailto:ywang70@smith.edu"
     - name: "linkedin"
       url: "https://www.linkedin.com/in/yuhan-wang-yw/"
     - name: "github"
@@ -41,6 +29,24 @@ params:
       url: "https://www.instagram.com/yaaaarth/"
     - name: "cv"
       url: "/content/cv.md"
+
+  author: ["Yuhan Wang"]
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
 
 menu:
   main:
@@ -60,13 +66,27 @@ menu:
       name: Posts
       url: /posts/
       weight: 40
-    - identifier: archive
-      name: Archive
-      url: /archive/
+    - identifier: search
+      name: Search
+      url: /search/
       weight: 50
+
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  keys:
+    - title
+    - permalink
+    - summary
+    - content
 
 outputs:
   home:
     - HTML
     - RSS
     - JSON
+
