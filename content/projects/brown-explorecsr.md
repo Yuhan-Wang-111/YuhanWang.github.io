@@ -4,7 +4,7 @@ date: 2023-11-18T15:47:40.000Z
 draft: false
 tag: ["project"]
 cover:
-  image: /img/projects/p1/svg_poster_Explore_CSR_Pearl_Zhang_Yuhan_Wang.png
+  image: /img/projects/brown-explorecsr/svg_poster_Explore_CSR_Pearl_Zhang_Yuhan_Wang.png
   alt: Brown ExploreCSR SVG Poster
 params:
   cover:
