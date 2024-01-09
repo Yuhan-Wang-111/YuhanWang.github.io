@@ -2,9 +2,9 @@
 title: 'Brown ExploreCSR'
 date: 2023-11-18T15:47:40.000Z
 draft: false
-tag: ["project"]
+tags: ["project","Brown","exploreCSR","svg","html","visual","creative design"]
 cover:
-  image: /img/projects/p1/svg_poster_Explore_CSR_Pearl_Zhang_Yuhan_Wang.png
+  image: /img/projects/brown-explorecsr/svg_poster_Explore_CSR_Pearl_Zhang_Yuhan_Wang.png
   alt: Brown ExploreCSR SVG Poster
 params:
   cover:

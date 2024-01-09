@@ -2,6 +2,7 @@
 title: Plots
 date: 2023-10-22T14:32:27.000Z
 draft: false
+showtoc: false
 ---
 
 This page contains some *plots* that I enjoy or find beautiful.

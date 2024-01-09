@@ -6,15 +6,15 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
-    --theme: #A9C0C3;
+    --theme: rgb(169, 192, 195);
     --entry: #b9d0d39e;
     --primary: rgb(30, 30, 30);
     --secondary: rgb(108, 108, 108);
     --tertiary: #45838b; 
     --content: rgb(31, 31, 31);
-    --hljs-bg: #A9C0C3;
-    --code-bg: #A9C0C3;
-    --border: #bdcdd7;
+    --hljs-bg: rgb(169, 192, 195);
+    --code-bg: rgb(180, 204, 207);
+    --border: rgb(189, 205, 215);
 }
 
 .dark {

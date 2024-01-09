@@ -2,7 +2,7 @@
 title: 'Mystery Art Object'
 date: 2024-01-07T22:22:29-05:00
 draft: false
-tag: ["project","machine learning","art"]
+tags: ["project","machine learning","art"]
 cover:
   image: /img/projects/mystery-art-recognition/model_snippet.png
   alt: Mystery Art Object Recognition Model Snippet

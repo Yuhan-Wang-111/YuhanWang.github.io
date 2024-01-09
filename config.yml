@@ -24,7 +24,7 @@ params:
     - name: "linkedin"
       url: "https://www.linkedin.com/in/yuhan-wang-yw/"
     - name: "github"
-      url: "https://github.com/Yuhan-Wang-yw"
+      url: "https://github.com/yuhanwww"
     - name: "instagram"
       url: "https://www.instagram.com/yaaaarth/"
     - name: "cv"
@@ -45,16 +45,18 @@ params:
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  showtoc: true
   hideMeta: true
+
+  cover:
+    hidden: true
 
 menu:
   main:
-    - identifier: home
-      name: YW
-      url: index.html
-      weight: 5
+    # - identifier: home
+    #   name: YW
+    #   url: index.html
+    #   weight: 5
     - identifier: intro
       name: Intro
       url: /intro/
@@ -67,13 +69,17 @@ menu:
     #   name: CV
     #   url: /cv/
     #   weight: 40
-    - identifier: posts
-      name: Posts
-      url: /posts/
-      weight: 40
+    # - identifier: posts
+    #   name: Posts
+    #   url: /posts/
+    #   weight: 40
     - identifier: search
       name: Search
       url: /search/
+      weight: 50
+    - identifier: tags
+      name: Tags
+      url: /tags/
       weight: 50
 
 fuseOpts:
@@ -95,3 +101,5 @@ outputs:
     - RSS
     - JSON
 
+taxonomies:
+  tag: tags
