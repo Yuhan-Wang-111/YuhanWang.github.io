@@ -12,7 +12,7 @@ params:
   profileMode:
     enabled: true
     title: "Yuhan Wang"
-    subtitle: "Hey! Welcome to Yuhan's Portfolio side ♡"
+    subtitle: "Hey! Welcome to Yuhan's Portfolio site"
     imageUrl: "/img/profile/profile.png"
     imageTitle: "Yuhan_Embroidery_profile_photo"
     imageWidth: 120
@@ -35,7 +35,7 @@ params:
   ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: false
   ShowWordCount: false
   ShowRssButtonInSectionTermList: false
@@ -47,21 +47,26 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+  hideMeta: true
 
 menu:
   main:
-    - identifier: yw
+    - identifier: home
       name: YW
       url: index.html
+      weight: 5
+    - identifier: intro
+      name: Intro
+      url: /intro/
       weight: 10
     - identifier: projects
       name: Projects
       url: /projects/
       weight: 20
-    - identifier: CV
-      name: CV
-      url: /cv/
-      weight: 40
+    # - identifier: CV
+    #   name: CV
+    #   url: /cv/
+    #   weight: 40
     - identifier: posts
       name: Posts
       url: /posts/
