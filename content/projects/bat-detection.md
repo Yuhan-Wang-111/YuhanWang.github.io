@@ -10,14 +10,12 @@ cover:
   alt: Bat Detection Model Prediction Confusion Matrix Word Cloud
   hidden: false
 ---
-Team A: Anders Freeman[^1], Anusha Bandaru[^2], Iris Yang[^3], Linda Dominguez[^1], Yuhan Wang[^4]
+Team A: Anders Freeman, Anusha Bandaru, Iris Yang, Linda Dominguez, Yuhan Wang
 
 [^1]: Wellesley College
 [^2]: Northeastern University
 [^3]: Tufts University
 [^4]: Smith College
-
-Our AI Studio TA is Leandra Marie Tejedor, and our challenge advisor is Noah Snyder from Biointerphase.
 
 ## Introduction
 White Nose Syndrome (WNS) is a fungal disease that infects skin of the muzzle, ears, wings of hibernating bats and has ravaged North American bat populations. This project aimed to understand the outlook for bat population decline in North America due to WNS, use machine Learning models to predict what features signal population decline, and so to provide insight to guide efficient bioengineered solutions to combat WNS for Biointerphase. 
@@ -29,8 +27,6 @@ Here is an overview of our approach:
 
 ## Data
 Our project combines 3 datasets: Skin mycobiomes of Easter North American bats, west_master_table, and white_nose_county_status. The first 2 datasets contain information about bat population, fungi detected[^5], collection date, collection location, host group, CFU, etc. The 3rd dataset contains information about time, location, and WNS presence. We merged 3 datasets by time, location, and species overlap, and then one-hot-encoded the data for model training. Our label is WNS present or not, and we aimed to explore what freatures best predict the presence of WNS.
-
-Exploritory Data Analysis was performed in EDA_west_master_table.ipynb, and further data exploration and data cleaning of the merged dataset is in CURRENT_DATA_CLEANING.ipynb. Unfortunately, we realized that location and time are highly related to our label,so different location and time can be used to directly tell if WNS is present or not despite other features, which allows the model to cheat. Therefore, location and time are eliminated in the final model training.
 
 Final dataset has 800 entries and includes columns as follow:
 * Location
@@ -48,18 +44,14 @@ For the final model training, Modeling(1).csv is used for the NLP model, and one
 We built 2 models in the project: a NLP(natural language processing) and a Random Forest. We started with the NLP because as the fungi classification on differnet levels are essentially arbitrary words, we wanted the model to find its own pattern. Then we chose to build a seconde model -- a random forest for a more explananble model.
 
 ### NLP Model 
+{{< gist yuhanwww d567bd987edadfae5b2fca7bcdfc8615 >}}
 - Took all features and put them as a natural text “sentence” and fed that data into a natural
 language processing pipeline.
 - Created the actual neural network with the keras library, while training it on the features in
 the set
 - Finally, we plotted the training and validation loss and accuracy.
 
-The feature for the NLP model is a giant string with all features combined as the text input, for example, “2015-01-15 unassigned Hamilton New York 12 Ascomycota Leotiomycetes Thelebolales Pseudeurotiaceae Pseudogymnoascus destructans”.
-
-Here is a visualization of the training of the NLP Model. The model training is good and steady, as the loss for both training dataset and validation dataset decreases after every epoch, and the accuracy increases. 
-{{< figure width="800" alt="NLP model training overview" src=/img/projects/bat-detection/NLP_training.png >}}
-
-Then here is a table that concludes the accuracy results of different combinations of features:
+Here is a table that concludes the accuracy results of different combinations of features:
 |                  Data   Included                             |  Accuracy  |
 |:------------------------------------------------------------:| :---------:|
 | State, County, Date, Host Group, CFU, Fungal Classification  |    98.26%  |
@@ -79,16 +71,16 @@ The main insights of the NLP model is that:
 - The presence of WNS fungus in the population is not directly linked with WNS itself
 - Species of fungus are associated with populations that have had WNS in the past
 
+---
+
 ### Random Forest Model
+{{< gist yuhanwww 2b452f82c8ca874dbff9418cfa30ad90 >}}
 - Is more interpretable than a NLP model
 - Splits the data into training and testing sets, as well as a random state to ensure
 reproducibility
 - Has a max_depth of 32 and a maximum number of estimators at 300.
 - After the model is fitted and predictions are made, we use the root mean squared error
 (RMSE) and the R2 score to get our results. The RMSE measures the difference between a model's predicted values and the actual values, while the R2 score is the accuracy.
-
-Here is a visualization of the Random Forest Model. It shows the importance of features that the random forest model considers when making its prediction.
-{{< figure width="900" alt="NLP model training overview" src=/img/projects/bat-detection/rf_vis.png >}}
 
 Here is a table showing the overall results.
 |                  Data   Included                             |  Accuracy  |
@@ -105,6 +97,7 @@ Some key findings from the Random Forest Model:
 - We also found that the features that were most correlated with the data were the date and how resistant the population was.
 - Sample Collection Date, and to a lesser extent, Unnamed: 0, is crucial to the accuracy of the Random Forest Model. Without it, the accuracy drops by a lot.
 
+---
 ### 2 Model Comparison
 {{< figure width="800" alt="NLP model training overview" src=/img/projects/bat-detection/2model_comparison.png >}}
 
@@ -115,17 +108,4 @@ Combined with visualizations of the prediction results, our project indicates ne
 
 On top of the technical aspect, we also realized the importance of having a clear outline of our research question. As dataset is really the foundation of a successful machine learning model, we hope to prioritize data exploration, analysis, and experiment in the future. Last but not least, communication, even over communication, is very essetial for a team project that scoped 3 months.
 
----
-
-## Potential Next Step
-- NLP model
-  - Improvements to data cleaning pipeline and time series labeling
-    - create time-specific WNS presence label
-    - implement different vectorizers
-    - Analyze the NLP Model to find correlations between Fungus species and WNS presence
-    - evaluating if fungus species is correlated with bat species, and if bat species is correlated with WNS
-- Random Forest model
-  - Feature engineering
-  - Looking into stacking ensemble models
-  - Expand our dataset for a more comprehensive model
-- Compare 2 models’ results for more insights
+[Check out the Github Repo for full record!](https://github.com/Yuhanwww/Bat-Detection-Model)
