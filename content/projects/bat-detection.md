@@ -25,6 +25,7 @@ White Nose Syndrome (WNS) is a fungal disease that infects skin of the muzzle, e
 Here is an overview of our approach:
 {{< figure width="750" alt="Approach Overview" src=/img/projects/bat-detection/approach.png >}}
 
+---
 
 ## Data
 Our project combines 3 datasets: Skin mycobiomes of Easter North American bats, west_master_table, and white_nose_county_status. The first 2 datasets contain information about bat population, fungi detected[^5], collection date, collection location, host group, CFU, etc. The 3rd dataset contains information about time, location, and WNS presence. We merged 3 datasets by time, location, and species overlap, and then one-hot-encoded the data for model training. Our label is WNS present or not, and we aimed to explore what freatures best predict the presence of WNS.
@@ -40,6 +41,8 @@ Final dataset has 800 entries and includes columns as follow:
 For the final model training, Modeling(1).csv is used for the NLP model, and one_hot_model_data_without_county_and_state.csv is used for the Random Forest model.
 
 [^5]: Specifically, information about fungal classification on differnet levels: Phylum, Class,	Order, Family, Genus, and Species
+
+---
 
 ## Model and Results
 We built 2 models in the project: a NLP(natural language processing) and a Random Forest. We started with the NLP because as the fungi classification on differnet levels are essentially arbitrary words, we wanted the model to find its own pattern. Then we chose to build a seconde model -- a random forest for a more explananble model.
@@ -105,10 +108,14 @@ Some key findings from the Random Forest Model:
 ### 2 Model Comparison
 {{< figure width="800" alt="NLP model training overview" src=/img/projects/bat-detection/2model_comparison.png >}}
 
+---
+
 ## Conclusion
 Combined with visualizations of the prediction results, our project indicates new directions in the research of WNS and also foundational models for future application of machine learning in the study of similar diseases. We helped inform Biointerphase of the most efficient action to combat WNS, and provided a basis for future work on combating WNS, including the availability of public datasets on WNS, 2 preliminary ML models on WNS-related data, and possible research directions.
 
 On top of the technical aspect, we also realized the importance of having a clear outline of our research question. As dataset is really the foundation of a successful machine learning model, we hope to prioritize data exploration, analysis, and experiment in the future. Last but not least, communication, even over communication, is very essetial for a team project that scoped 3 months.
+
+---
 
 ## Potential Next Step
 - NLP model

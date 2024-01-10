@@ -7,14 +7,14 @@
     --footer-height: 60px;
     --radius: 8px;
     --theme: rgb(169, 192, 195);
-    --entry: #b9d0d39e;
+    --entry: rgb(180, 204, 207);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(108, 108, 108);
-    --tertiary: #45838b; 
+    --tertiary: rgba(90, 138, 144, 0.492); 
     --content: rgb(31, 31, 31);
     --hljs-bg: rgb(169, 192, 195);
-    --code-bg: rgb(180, 204, 207);
-    --border: rgb(189, 205, 215);
+    --code-bg: rgb(169, 192, 195);
+    --border: rgb(90, 138, 144);
 }
 
 .dark {
@@ -26,7 +26,7 @@
     --content: rgb(196, 196, 197);
     --hljs-bg: rgb(0,14,21);
     --code-bg: rgb(55, 56, 62);
-    --border: rgb(51, 51, 51);
+    --border: rgb(64, 112, 79);
 }
 
 .list {
