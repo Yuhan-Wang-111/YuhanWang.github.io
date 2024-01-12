@@ -1,0 +1,30 @@
+
+  <svg width = "500" height = "300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+    <!--changing color wave one line stroke, stroke-width can be below 1 or around 20, opacity above 75-->    
+    <g>     
+      <path stroke-width = "1px" stroke= "rgb(0, 90, 255)" fill="none" d="M 10,50 Q 25,25 40,50 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width = "1px" stroke= "rgb(0, 100, 245)" fill="none" d="M 10,70 Q 25,45 40,70 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width = "1px" stroke= "rgb(0, 110, 235)" fill="none" d="M 10,90 Q 25,65 40,90 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width = "1px" stroke= "rgb(0, 120, 225)" fill="none" d="M 10,110 Q 25,85 40,110 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width = "1px" stroke= "rgb(0, 130, 215)" fill="none" d="M 10,130 Q 25,105 40,130 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width = "1px" stroke= "rgb(0, 140, 215)" fill="none" d="M 10,150 Q 25,125 40,150 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width = "1px" stroke= "rgb(0, 150, 225)" fill="none" d="M 10,170 Q 25,145 40,170 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width = "1px" stroke= "rgb(0, 160, 235)" fill="none" d="M 10,190 Q 25,165 40,190 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width = "1px" stroke= "rgb(0, 170, 245)" fill="none" d="M 10,210 Q 25,185 40,210 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width = "1px" stroke= "rgb(0, 180, 255)" fill="none" d="M 10,230 Q 25,205 40,230 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+    </g>
+
+    <g>     
+      <path stroke-width='20px' opacity='0.75' stroke= "rgb(0, 180, 255)" fill="none" d="M 260,50 Q 275,25 290,50 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width='20px' opacity='0.75' stroke= "rgb(0, 170, 245)" fill="none" d="M 260,70 Q 275,45 290,70 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width='20px' opacity='0.75' stroke= "rgb(0, 160, 235)" fill="none" d="M 260,90 Q 275,65 290,90 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width='20px' opacity='0.75' stroke= "rgb(0, 150, 225)" fill="none" d="M 260,110 Q 275,85 290,110 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width='20px' opacity='0.75' stroke= "rgb(0, 140, 215)" fill="none" d="M 260,130 Q 275,105 290,130 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width='20px' opacity='0.75' stroke= "rgb(0, 130, 215)" fill="none" d="M 260,150 Q 275,125 290,150 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width='20px' opacity='0.75' stroke= "rgb(0, 120, 225)" fill="none" d="M 260,170 Q 275,145 290,170 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width='20px' opacity='0.75' stroke= "rgb(0, 110, 235)" fill="none" d="M 260,190 Q 275,165 290,190 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width='20px' opacity='0.75' stroke= "rgb(0, 100, 245)" fill="none" d="M 260,210 Q 275,185 290,210 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+      <path stroke-width='20px' opacity='0.75' stroke= "rgb(0, 90, 255)" fill="none" d="M 260,230 Q 275,205 290,230 t 30,0 30,0 30,0 30,0 30,0 30,0"/>
+    </g>
+
+  </svg>

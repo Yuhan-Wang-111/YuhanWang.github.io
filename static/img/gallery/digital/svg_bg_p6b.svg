@@ -1,0 +1,262 @@
+<svg xmlns='http://www.w3.org/2000/svg'  width='800' height='800' viewBox='0 0 800 800'>
+    <defs>
+        <radialGradient id="background">
+            <stop offset='0' stop-color='yellow' />
+            <stop offset='1' stop-color='#ff5100'/>
+        </radialGradient>
+
+        <pattern id="background_block" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+                <rect x="100" y="0" width="100" height="100" fill='#ffd500'/>
+                <rect x="0" y="100" width="100" height="100" fill='#ffd500'/>
+
+        </pattern>
+
+        <linearGradient id="a" gradientUnits="objectBoundingBox" gradientTransform="rotate(90)">
+            <stop offset='0.25' stop-color='#000' stop-opacity='0.8'/>
+            <stop offset='0.7' stop-color='#000' stop-opacity='0'/>
+        </linearGradient>
+        <linearGradient id="b" gradientUnits="objectBoundingBox">
+            <stop offset='0.25' stop-color='#000' stop-opacity='0.8'/>
+            <stop offset='0.7' stop-color='#000' stop-opacity='0'/>
+        </linearGradient>
+        <linearGradient id="e" gradientUnits="objectBoundingBox">x
+            <stop offset='0.1' stop-color='#000' stop-opacity='0'/>
+            <stop offset='0.9' stop-color='#000' stop-opacity='0.4'/>
+        </linearGradient>
+    </defs>
+
+    <filter id="canvas">
+        <feTurbulence
+            type="turbulence"
+            baseFrequency="0.1 0.66"
+            numOctaves="3"
+            Seed = "20"
+            result="n" />
+        <feBlend in="n" result="noise" mode="multiply" />
+        <feDiffuseLighting in="n" result="light" lighting-color='#ff8000'>
+            <feDistantLight azimuth="45" elevation="60" filtername="feDistantLight"/>
+        </feDiffuseLighting>
+    </filter>
+
+
+    <rect fill='#ff8000' width='800' height='800' filter="url(#canvas)"/>
+    <circle cx="400" cy="800" r="910" fill="url(#background)" fill-opacity='0.4'/>
+    <rect x="0" y="0" width="800" height="800" fill="url(#background_block)" fill-opacity='0.4'/>	<g fill-opacity='0.6'> 
+	<path fill="url(#a)" d="M 100,100 100,125 200,125 200,100 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="11s" keyTimes="0;0.5;1"
+ values="M 100,100 100,125 200,125 200,100 ; M 100,100 100,100 200,100 200,100 ; M 100,100 100,125 200,125 200,100 "/>
+	</path>
+	<path fill="url(#b)" d="M 100,100 100,200 125,200 125,100 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="6s" keyTimes="0;0.5;1"
+ values="M 100,100 100,200 125,200 125,100 ; M 100,100 100,200 100,200 100,100 ; M 100,100 100,200 125,200 125,100 "/>
+	</path>
+	<path fill="url(#e)" d="M 190,100 200,100 200,200 190,200 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="7s" keyTimes="0;0.5;1"
+ values="M 190,100 200,100 200,200 190,200 ; M 200,100 200,100 200,200 200,200 ; M 190,100 200,100 200,200 190,200 "/>
+	</path>
+	<path fill="url(#a)" d="M 100,300 100,325 200,325 200,300 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="10s" keyTimes="0;0.5;1"
+ values="M 100,300 100,325 200,325 200,300 ; M 100,300 100,300 200,300 200,300 ; M 100,300 100,325 200,325 200,300 "/>
+	</path>
+	<path fill="url(#b)" d="M 100,300 100,400 125,400 125,300 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="10s" keyTimes="0;0.5;1"
+ values="M 100,300 100,400 125,400 125,300 ; M 100,300 100,400 100,400 100,300 ; M 100,300 100,400 125,400 125,300 "/>
+	</path>
+	<path fill="url(#e)" d="M 190,300 200,300 200,400 190,400 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="7s" keyTimes="0;0.5;1"
+ values="M 190,300 200,300 200,400 190,400 ; M 200,300 200,300 200,400 200,400 ; M 190,300 200,300 200,400 190,400 "/>
+	</path>
+	<path fill="url(#a)" d="M 300,300 300,325 400,325 400,300 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="7s" keyTimes="0;0.5;1"
+ values="M 300,300 300,325 400,325 400,300 ; M 300,300 300,300 400,300 400,300 ; M 300,300 300,325 400,325 400,300 "/>
+	</path>
+	<path fill="url(#b)" d="M 300,300 300,400 325,400 325,300 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="9s" keyTimes="0;0.5;1"
+ values="M 300,300 300,400 325,400 325,300 ; M 300,300 300,400 300,400 300,300 ; M 300,300 300,400 325,400 325,300 "/>
+	</path>
+	<path fill="url(#e)" d="M 390,300 400,300 400,400 390,400 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="7s" keyTimes="0;0.5;1"
+ values="M 390,300 400,300 400,400 390,400 ; M 400,300 400,300 400,400 400,400 ; M 390,300 400,300 400,400 390,400 "/>
+	</path>
+	<path fill="url(#a)" d="M 300,700 300,725 400,725 400,700 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="11s" keyTimes="0;0.5;1"
+ values="M 300,700 300,725 400,725 400,700 ; M 300,700 300,700 400,700 400,700 ; M 300,700 300,725 400,725 400,700 "/>
+	</path>
+	<path fill="url(#b)" d="M 300,700 300,800 325,800 325,700 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="14s" keyTimes="0;0.5;1"
+ values="M 300,700 300,800 325,800 325,700 ; M 300,700 300,800 300,800 300,700 ; M 300,700 300,800 325,800 325,700 "/>
+	</path>
+	<path fill="url(#e)" d="M 390,700 400,700 400,800 390,800 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="15s" keyTimes="0;0.5;1"
+ values="M 390,700 400,700 400,800 390,800 ; M 400,700 400,700 400,800 400,800 ; M 390,700 400,700 400,800 390,800 "/>
+	</path>
+	<path fill="url(#a)" d="M 500,100 500,125 600,125 600,100 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="14s" keyTimes="0;0.5;1"
+ values="M 500,100 500,125 600,125 600,100 ; M 500,100 500,100 600,100 600,100 ; M 500,100 500,125 600,125 600,100 "/>
+	</path>
+	<path fill="url(#b)" d="M 500,100 500,200 525,200 525,100 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="10s" keyTimes="0;0.5;1"
+ values="M 500,100 500,200 525,200 525,100 ; M 500,100 500,200 500,200 500,100 ; M 500,100 500,200 525,200 525,100 "/>
+	</path>
+	<path fill="url(#e)" d="M 590,100 600,100 600,200 590,200 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="13s" keyTimes="0;0.5;1"
+ values="M 590,100 600,100 600,200 590,200 ; M 600,100 600,100 600,200 600,200 ; M 590,100 600,100 600,200 590,200 "/>
+	</path>
+	<path fill="url(#a)" d="M 500,500 500,525 600,525 600,500 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="10s" keyTimes="0;0.5;1"
+ values="M 500,500 500,525 600,525 600,500 ; M 500,500 500,500 600,500 600,500 ; M 500,500 500,525 600,525 600,500 "/>
+	</path>
+	<path fill="url(#b)" d="M 500,500 500,600 525,600 525,500 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="7s" keyTimes="0;0.5;1"
+ values="M 500,500 500,600 525,600 525,500 ; M 500,500 500,600 500,600 500,500 ; M 500,500 500,600 525,600 525,500 "/>
+	</path>
+	<path fill="url(#e)" d="M 590,500 600,500 600,600 590,600 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="11s" keyTimes="0;0.5;1"
+ values="M 590,500 600,500 600,600 590,600 ; M 600,500 600,500 600,600 600,600 ; M 590,500 600,500 600,600 590,600 "/>
+	</path>
+	<path fill="url(#a)" d="M 700,300 700,325 800,325 800,300 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="12s" keyTimes="0;0.5;1"
+ values="M 700,300 700,325 800,325 800,300 ; M 700,300 700,300 800,300 800,300 ; M 700,300 700,325 800,325 800,300 "/>
+	</path>
+	<path fill="url(#b)" d="M 700,300 700,400 725,400 725,300 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="15s" keyTimes="0;0.5;1"
+ values="M 700,300 700,400 725,400 725,300 ; M 700,300 700,400 700,400 700,300 ; M 700,300 700,400 725,400 725,300 "/>
+	</path>
+	<path fill="url(#e)" d="M 790,300 800,300 800,400 790,400 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="11s" keyTimes="0;0.5;1"
+ values="M 790,300 800,300 800,400 790,400 ; M 800,300 800,300 800,400 800,400 ; M 790,300 800,300 800,400 790,400 "/>
+	</path>
+	<path fill="url(#a)" d="M 700,700 700,725 800,725 800,700 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="14s" keyTimes="0;0.5;1"
+ values="M 700,700 700,725 800,725 800,700 ; M 700,700 700,700 800,700 800,700 ; M 700,700 700,725 800,725 800,700 "/>
+	</path>
+	<path fill="url(#b)" d="M 700,700 700,800 725,800 725,700 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="14s" keyTimes="0;0.5;1"
+ values="M 700,700 700,800 725,800 725,700 ; M 700,700 700,800 700,800 700,700 ; M 700,700 700,800 725,800 725,700 "/>
+	</path>
+	<path fill="url(#e)" d="M 790,700 800,700 800,800 790,800 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="12s" keyTimes="0;0.5;1"
+ values="M 790,700 800,700 800,800 790,800 ; M 800,700 800,700 800,800 800,800 ; M 790,700 800,700 800,800 790,800 "/>
+	</path>
+	<path fill="url(#a)" d="M 0,0 0,25 100,25 100,0 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="12s" keyTimes="0;0.5;1"
+ values="M 0,0 0,25 100,25 100,0 ; M 0,0 0,0 100,0 100,0 ; M 0,0 0,25 100,25 100,0 "/>
+	</path>
+	<path fill="url(#b)" d="M 0,0 0,100 25,100 25,0 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="9s" keyTimes="0;0.5;1"
+ values="M 0,0 0,100 25,100 25,0 ; M 0,0 0,100 0,100 0,0 ; M 0,0 0,100 25,100 25,0 "/>
+	</path>
+	<path fill="url(#e)" d="M 90,0 100,0 100,100 90,100 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="14s" keyTimes="0;0.5;1"
+ values="M 90,0 100,0 100,100 90,100 ; M 100,0 100,0 100,100 100,100 ; M 90,0 100,0 100,100 90,100 "/>
+	</path>
+	<path fill="url(#a)" d="M 0,200 0,225 100,225 100,200 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="13s" keyTimes="0;0.5;1"
+ values="M 0,200 0,225 100,225 100,200 ; M 0,200 0,200 100,200 100,200 ; M 0,200 0,225 100,225 100,200 "/>
+	</path>
+	<path fill="url(#b)" d="M 0,200 0,300 25,300 25,200 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="12s" keyTimes="0;0.5;1"
+ values="M 0,200 0,300 25,300 25,200 ; M 0,200 0,300 0,300 0,200 ; M 0,200 0,300 25,300 25,200 "/>
+	</path>
+	<path fill="url(#e)" d="M 90,200 100,200 100,300 90,300 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="9s" keyTimes="0;0.5;1"
+ values="M 90,200 100,200 100,300 90,300 ; M 100,200 100,200 100,300 100,300 ; M 90,200 100,200 100,300 90,300 "/>
+	</path>
+	<path fill="url(#a)" d="M 0,400 0,425 100,425 100,400 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="5s" keyTimes="0;0.5;1"
+ values="M 0,400 0,425 100,425 100,400 ; M 0,400 0,400 100,400 100,400 ; M 0,400 0,425 100,425 100,400 "/>
+	</path>
+	<path fill="url(#b)" d="M 0,400 0,500 25,500 25,400 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="5s" keyTimes="0;0.5;1"
+ values="M 0,400 0,500 25,500 25,400 ; M 0,400 0,500 0,500 0,400 ; M 0,400 0,500 25,500 25,400 "/>
+	</path>
+	<path fill="url(#e)" d="M 90,400 100,400 100,500 90,500 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="8s" keyTimes="0;0.5;1"
+ values="M 90,400 100,400 100,500 90,500 ; M 100,400 100,400 100,500 100,500 ; M 90,400 100,400 100,500 90,500 "/>
+	</path>
+	<path fill="url(#a)" d="M 0,600 0,625 100,625 100,600 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="14s" keyTimes="0;0.5;1"
+ values="M 0,600 0,625 100,625 100,600 ; M 0,600 0,600 100,600 100,600 ; M 0,600 0,625 100,625 100,600 "/>
+	</path>
+	<path fill="url(#b)" d="M 0,600 0,700 25,700 25,600 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="15s" keyTimes="0;0.5;1"
+ values="M 0,600 0,700 25,700 25,600 ; M 0,600 0,700 0,700 0,600 ; M 0,600 0,700 25,700 25,600 "/>
+	</path>
+	<path fill="url(#e)" d="M 90,600 100,600 100,700 90,700 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="6s" keyTimes="0;0.5;1"
+ values="M 90,600 100,600 100,700 90,700 ; M 100,600 100,600 100,700 100,700 ; M 90,600 100,600 100,700 90,700 "/>
+	</path>
+	<path fill="url(#a)" d="M 200,0 200,25 300,25 300,0 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="11s" keyTimes="0;0.5;1"
+ values="M 200,0 200,25 300,25 300,0 ; M 200,0 200,0 300,0 300,0 ; M 200,0 200,25 300,25 300,0 "/>
+	</path>
+	<path fill="url(#b)" d="M 200,0 200,100 225,100 225,0 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="15s" keyTimes="0;0.5;1"
+ values="M 200,0 200,100 225,100 225,0 ; M 200,0 200,100 200,100 200,0 ; M 200,0 200,100 225,100 225,0 "/>
+	</path>
+	<path fill="url(#e)" d="M 290,0 300,0 300,100 290,100 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="15s" keyTimes="0;0.5;1"
+ values="M 290,0 300,0 300,100 290,100 ; M 300,0 300,0 300,100 300,100 ; M 290,0 300,0 300,100 290,100 "/>
+	</path>
+	<path fill="url(#a)" d="M 200,200 200,225 300,225 300,200 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="12s" keyTimes="0;0.5;1"
+ values="M 200,200 200,225 300,225 300,200 ; M 200,200 200,200 300,200 300,200 ; M 200,200 200,225 300,225 300,200 "/>
+	</path>
+	<path fill="url(#b)" d="M 200,200 200,300 225,300 225,200 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="10s" keyTimes="0;0.5;1"
+ values="M 200,200 200,300 225,300 225,200 ; M 200,200 200,300 200,300 200,200 ; M 200,200 200,300 225,300 225,200 "/>
+	</path>
+	<path fill="url(#e)" d="M 290,200 300,200 300,300 290,300 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="15s" keyTimes="0;0.5;1"
+ values="M 290,200 300,200 300,300 290,300 ; M 300,200 300,200 300,300 300,300 ; M 290,200 300,200 300,300 290,300 "/>
+	</path>
+	<path fill="url(#a)" d="M 200,400 200,425 300,425 300,400 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="10s" keyTimes="0;0.5;1"
+ values="M 200,400 200,425 300,425 300,400 ; M 200,400 200,400 300,400 300,400 ; M 200,400 200,425 300,425 300,400 "/>
+	</path>
+	<path fill="url(#b)" d="M 200,400 200,500 225,500 225,400 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="15s" keyTimes="0;0.5;1"
+ values="M 200,400 200,500 225,500 225,400 ; M 200,400 200,500 200,500 200,400 ; M 200,400 200,500 225,500 225,400 "/>
+	</path>
+	<path fill="url(#e)" d="M 290,400 300,400 300,500 290,500 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="9s" keyTimes="0;0.5;1"
+ values="M 290,400 300,400 300,500 290,500 ; M 300,400 300,400 300,500 300,500 ; M 290,400 300,400 300,500 290,500 "/>
+	</path>
+	<path fill="url(#a)" d="M 400,0 400,25 500,25 500,0 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="10s" keyTimes="0;0.5;1"
+ values="M 400,0 400,25 500,25 500,0 ; M 400,0 400,0 500,0 500,0 ; M 400,0 400,25 500,25 500,0 "/>
+	</path>
+	<path fill="url(#b)" d="M 400,0 400,100 425,100 425,0 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="13s" keyTimes="0;0.5;1"
+ values="M 400,0 400,100 425,100 425,0 ; M 400,0 400,100 400,100 400,0 ; M 400,0 400,100 425,100 425,0 "/>
+	</path>
+	<path fill="url(#e)" d="M 490,0 500,0 500,100 490,100 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="8s" keyTimes="0;0.5;1"
+ values="M 490,0 500,0 500,100 490,100 ; M 500,0 500,0 500,100 500,100 ; M 490,0 500,0 500,100 490,100 "/>
+	</path>
+	<path fill="url(#a)" d="M 400,600 400,625 500,625 500,600 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="12s" keyTimes="0;0.5;1"
+ values="M 400,600 400,625 500,625 500,600 ; M 400,600 400,600 500,600 500,600 ; M 400,600 400,625 500,625 500,600 "/>
+	</path>
+	<path fill="url(#b)" d="M 400,600 400,700 425,700 425,600 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="14s" keyTimes="0;0.5;1"
+ values="M 400,600 400,700 425,700 425,600 ; M 400,600 400,700 400,700 400,600 ; M 400,600 400,700 425,700 425,600 "/>
+	</path>
+	<path fill="url(#e)" d="M 490,600 500,600 500,700 490,700 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="7s" keyTimes="0;0.5;1"
+ values="M 490,600 500,600 500,700 490,700 ; M 500,600 500,600 500,700 500,700 ; M 490,600 500,600 500,700 490,700 "/>
+	</path>
+	<path fill="url(#a)" d="M 600,0 600,25 700,25 700,0 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="9s" keyTimes="0;0.5;1"
+ values="M 600,0 600,25 700,25 700,0 ; M 600,0 600,0 700,0 700,0 ; M 600,0 600,25 700,25 700,0 "/>
+	</path>
+	<path fill="url(#b)" d="M 600,0 600,100 625,100 625,0 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="11s" keyTimes="0;0.5;1"
+ values="M 600,0 600,100 625,100 625,0 ; M 600,0 600,100 600,100 600,0 ; M 600,0 600,100 625,100 625,0 "/>
+	</path>
+	<path fill="url(#e)" d="M 690,0 700,0 700,100 690,100 ">
+		<animate attributeName="d" repeatDur="indefinite" dur="14s" keyTimes="0;0.5;1"
+ values="M 690,0 700,0 700,100 690,100 ; M 700,0 700,0 700,100 700,100 ; M 690,0 700,0 700,100 690,100 "/>
+	</path>
+	</g>
+</svg>
