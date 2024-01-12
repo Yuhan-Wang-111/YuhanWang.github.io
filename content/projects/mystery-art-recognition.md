@@ -39,6 +39,7 @@ Here's a snippet of the image data here:
 Some Image augenmentation is applied to prevent overfitting as follows:
 {{< figure width="450" alt="Image Augmentation Visualization" src=/img/projects/mystery-art-recognition/Image_Augmentation.png >}}
 
+---
 ## Model
 The models I used are CNNs, one Keras and one Tensorflow. (Keras is model 1, Tensorflow is model 2) Essentially they are the same thing, but the Keras one is more nuanced with multiple layers, while the Tensorflow one is really a high-level, basic CNN, with 3 hidden layers.
 
@@ -63,6 +64,7 @@ Then coming to the prediction, the model definitely is more confident to (or pre
 
 Greek and Egyptian are the two that are predicted the most, while Roman is never predicted as the highest probable culture origin. To officially implement the model in real art recognition, more work is needed to decipher how the model predicts, which will more effectively provide insights about what features link to what prediction.
 
+---
 ## Final Thoughts
 This project concludes my study of art of ancient cities and of machine learning in general. The prolonged data collection phase allowed me to go over a huge number of artworks in different cultures, and the overall digging of data also provides insights about the number of artworks we have in record for different cultures– Egyptian being the most abundant. Moreover, the model is an innovative foundation for future application of ML to analyze artworks of ancient cities. It is transferable to similar research and will be more informative if fed with abundant high-quality data. Lastly, the models’ performance indicates the fact that artworks of ancient cities are highly related and share similarities in many aspects– material, pattern, subject matter, and so on. Greek being the culture in between Egyptian and Roman has equal resemblance to both styles in the model’s eyes, but the fact that the model performs well in predicting Greek also points out some unique features of Greek artworks in the model’s perception. Also, when concluding the model’s prediction, I only looked at the class with the highest probability, but it will be interesting to examine the probability distribution and analyze the artwork as a collection of styles. Overall, the project intersects art history with computer science and effectively utilizes modern technology to scientifically analyze artworks in their contexts, and I am excited to continue similar approaches for creative exploration of art through the computer’s perception.
 

@@ -11,8 +11,8 @@ enableEmoji: true
 params:
   profileMode:
     enabled: true
-    title: "Yuhan Wang"
-    subtitle: "Hey! Welcome to Yuhan's Portfolio site"
+    title: "Yuhan's Portfolio"
+    # subtitle: "Hey! Welcome to Yuhan's Portfolio site"
     imageUrl: "/img/profile/profile.png"
     imageTitle: "Yuhan_Embroidery_profile_photo"
     imageWidth: 120
@@ -47,6 +47,7 @@ params:
   hideSummary: false
   showtoc: true
   hideMeta: true
+  disableThemeToggle: true
 
   cover:
     hidden: true
@@ -65,10 +66,10 @@ menu:
       name: Projects
       url: /projects/
       weight: 20
-    # - identifier: CV
-    #   name: CV
-    #   url: /cv/
-    #   weight: 40
+    - identifier: Gallery
+      name: Gallery
+      url: /gallery
+      weight: 30
     # - identifier: posts
     #   name: Posts
     #   url: /posts/

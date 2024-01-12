@@ -17,6 +17,7 @@ Team A: Anders Freeman, Anusha Bandaru, Iris Yang, Linda Dominguez, Yuhan Wang
 [^3]: Tufts University
 [^4]: Smith College
 
+---
 ## Introduction
 White Nose Syndrome (WNS) is a fungal disease that infects skin of the muzzle, ears, wings of hibernating bats and has ravaged North American bat populations. This project aimed to understand the outlook for bat population decline in North America due to WNS, use machine Learning models to predict what features signal population decline, and so to provide insight to guide efficient bioengineered solutions to combat WNS for Biointerphase. 
 
