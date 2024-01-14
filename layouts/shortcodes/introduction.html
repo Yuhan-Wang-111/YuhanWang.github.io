@@ -1,0 +1,141 @@
+<style>
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7px;
+}
+
+.column {
+  float: none;
+  padding: 20px;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: var(--theme);
+  border: 2px solid var(--border);
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--tertiary);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--border);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /* border: 2px solid var(--border); */
+  border-top: 0;
+}
+</style>
+
+<img class="image-center" width="600" alt="Hey! This is Yuhan~" src="/img/intro/name.svg">
+
+<div class="row">
+  <div class="column left">
+    <img width="200" alt="personal photo" src="/img/intro/selfie.png">
+  </div>
+  <div class="column right">
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Intro')" id="defaultOpen">Intro</button>
+      <button class="tablinks" onclick="openCity(event, 'Academic')">Academic</button>
+      <button class="tablinks" onclick="openCity(event, 'Funsies')">Funsies</button>
+    </div>
+    
+    <div id="Intro" class="tabcontent">
+      <p style="padding: 20px;">
+        I am a junior at Smith College, double majoring in Art History & Computer Science.
+        <br/><br/>
+        I love to explore the intersection between art and technology-- generally fields that involve <a style="color: var(--text-em);">visual elements</a>, <a style="color: var(--text-em);">creativity</a>, and <a style="color: var(--text-em);">human aspects</a> like digital art, interface design, and virtual exhibitions.
+        <br/>
+        <a style="font-style: italic;">*Fun fact: I can't stop when start creating something digital, like making this web page.</a>
+        <br/><br/>
+        I enjoy solving design challenges and reflecting through the process to gain insights! Currently, I work as a studio design partner at the Smith College <a href="https://www.smith.edu/academics/design-thinking" style="text-decoration: underline; color:var(--text-em)">Design Thinking Initiative</a>, and am also a research assistant at the Prof. Christophe Golé's <a style="color: var(--text-em);">Phyllotaxis Plant Lab</a>.
+      </p> 
+    </div>
+    
+    <div id="Academic" class="tabcontent">
+      <p style="padding: 20px;">
+        My main focus is <a style="color: var(--text-em)">Human Computer Interaction</a>, <a style="color: var(--text-em)">Software Engineering</a>, and <a style="color: var(--text-em);">Machine Learning</a>.
+        <br/><br/>
+        Majoring in both art history and computer science allows me to develop interdisciplinary problem solving skills, to integrate information, methods of inquiry, research skills, and experiential learning. I have a huge passion for visual elements, which is closely connected to my enthusiasm in interface design and digital humanity.
+        <br/><br/>
+        In the next 10 years, I see myself pursuing a higher degree and working in a field that explores the design and use of technology. 
+      </p> 
+    </div>
+    
+    <div id="Funsies" class="tabcontent">
+      <p style="padding: 20px;">
+        I love design and creation (both physical and digital). For physical creations, thanks to my working at DTI, I learned to do crochet, sewing, woodwork, and operate machines like laser cutter, vinyl cutter, and 3d printer. For digital creations,  You can have a peek at the things that I made @<a href="/gallery/" style="text-decoration: underline;">Gallery</a> Page, or see more at my creations' <a href="https://www.instagram.com/yaaaarth/" style="text-decoration: underline;">instagram</a>!
+        <br/><br/>
+        In my free time, I am also an artistic swimming performer and street dance enthusiast :))
+        <br/> <br/> 
+        <br/> 
+      </p>
+    </div> 
+  </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>

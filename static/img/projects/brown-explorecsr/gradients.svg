@@ -1,0 +1,21 @@
+  <svg width="800" height="400" xmlns = "http://www.w3.org/2000/svg">
+    <!--filter-->
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+
+    <filter id="blurB">
+      <feGaussianBlur stdDeviation="50" />
+    </filter>
+
+    <!--background two ball-->
+    <circle cx = "100" cy = "300" r = "250" fill = "lightgreen" opacity="0.8" filter="url(#blurB)"/>
+    <circle cx = "300" cy = "100" r = "250" fill = "lightblue" opacity="0.6" filter="url(#blurB)"/>
+
+    <rect x="400" y="0" width="400" height="400" fill="white"/>
+
+    <!--background one ball with stroke opacity-->
+    <circle cx = "615" cy = "200" r = "180" stroke="lightgreen" stroke-width="160" stroke-opacity="80%" fill="green" opacity=".5" filter="url(#blurB)"/>
+
+    
+  </svg>

@@ -8,13 +8,14 @@
     --radius: 8px;
     --theme: rgb(169, 192, 195);
     --entry: rgb(180, 204, 207);
-    --primary: rgb(30, 30, 30);
+    --primary: rgb(37, 37, 37);
     --secondary: rgb(108, 108, 108);
     --tertiary: rgba(90, 138, 144, 0.492); 
-    --content: rgb(31, 31, 31);
+    --content: rgb(32, 28, 28);
     --hljs-bg: rgb(169, 192, 195);
     --code-bg: rgb(169, 192, 195);
     --border: rgb(90, 138, 144);
+    --text-em: rgb(37, 82, 131);
 }
 
 .dark {

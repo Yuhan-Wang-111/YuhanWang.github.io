@@ -1,0 +1,83 @@
+<svg xmlns='http://www.w3.org/2000/svg'  width='800' height='800' viewBox='0 0 800 800'>
+    <defs>
+        <radialGradient id="background">
+            <stop offset='0' stop-color='yellow' />
+            <stop offset='1' stop-color='#ff5100'/>
+        </radialGradient>
+
+        <pattern id="background_block" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+            <g> <!--upper right box-->
+                <rect x="100" y="0" width="100" height="100" fill='#ffd500'/>
+                <path fill='url(#a)' d="M 100,0 100,30 200,30 200,0"> 
+                    <animate attributeName="d" repeatDur="indefinite" dur="8s" keyTimes="0;0.5;1" 
+                    values="M 100,0 100,30 200,30 200,0; M 100,0 100,10 200,10 200,0; M 100,0 100,30 200,30 200,0"/>
+                </path>
+                <path fill='url(#b)' d="M 100,0 100,100 130,100 130,0"> 
+                    <animate attributeName="d" repeatDur="indefinite" dur="8s" keyTimes="0;0.5;1" 
+                    values="M 100,0 100,100 130,100 130,0; M 100,0 100,100 110,100 110,0; M 100,0 100,100 130,100 130,0"/>
+                </path>
+                <path fill='url(#e)' d="M 190,100 200,100 200,0 190,0" >
+                <animate attributeName="d" repeatDur="indefinite" dur="8s" keyTimes="0;0.5;1" 
+                    values="M 190,100 200,100 200,0 190,0; M 198,100 200,100 200,0 198,0; M 190,100 200,100 200,0 190,0"/>
+                </path>
+            </g>    
+            <g> <!--lower left box-->
+                <rect x="0" y="100" width="100" height="100" fill='#ffd500'/>
+                <path fill='url(#a)' d="M 000,100 000,130 100,130 100,100"> 
+                    <animate attributeName="d" repeatDur="indefinite" dur="8s" keyTimes="0;0.5;1" 
+                    values="M 000,100 000,110 100,110 100,100; M 000,100 000,130 100,130 100,100; M 000,100 000,110 100,110 100,100"/>
+                </path>
+                <path fill='url(#b)' d="M 00,100 00,200 30,200 30,100"> 
+                    <animate attributeName="d" repeatDur="indefinite" dur="8s" keyTimes="0;0.5;1" 
+                    values="M 00,100 00,200 10,200 10,100; M 00,100 00,200 30,200 30,100; M 00,100 00,200 10,200 10,100"/>
+                </path>
+                <path fill='url(#e)' d="M 90,200 100,200 100,100 90,100" >
+                <animate attributeName="d" repeatDur="indefinite" dur="8s" keyTimes="0;0.5;1" 
+                    values="M 98,200 100,200 100,100 98,100; M 90,200 100,200 100,100 90,100; M 98,200 100,200 100,100 98,100"/>
+                </path>
+            </g>    
+        </pattern>
+
+        <linearGradient id="a" gradientUnits="objectBoundingBox" gradientTransform="rotate(90)">
+            <stop offset='0.25' stop-color='#000' stop-opacity='0.8'/>
+            <stop offset='0.7' stop-color='#000' stop-opacity='0'/>
+        </linearGradient>
+        <linearGradient id="b" gradientUnits="objectBoundingBox">
+            <stop offset='0.25' stop-color='#000' stop-opacity='0.8'/>
+            <stop offset='0.7' stop-color='#000' stop-opacity='0'/>
+        </linearGradient>
+        <linearGradient id="c" gradientUnits="objectBoundingBox" gradientTransform="rotate(90)">
+            <stop offset='0.2' stop-color='#000' stop-opacity='0.6'/>
+            <stop offset='0.8' stop-color='#000' stop-opacity='0'/>
+        </linearGradient>
+        <linearGradient id="d" gradientUnits="objectBoundingBox">
+            <stop offset='0.2' stop-color='#000' stop-opacity='0.6'/>
+            <stop offset='0.8' stop-color='#000' stop-opacity='0'/>
+        </linearGradient>
+        <linearGradient id="e" gradientUnits="objectBoundingBox">x
+            <stop offset='0.1' stop-color='#000' stop-opacity='0'/>
+            <stop offset='0.9' stop-color='#000' stop-opacity='0.4'/>
+        </linearGradient>
+    </defs>
+
+    <filter id="canvas">
+        <feTurbulence
+            type="turbulence"
+            baseFrequency="0.1 0.66"
+            numOctaves="3"
+            Seed = "20"
+            result="n" />
+        <feBlend in="n" result="noise" mode="multiply" />
+        <feDiffuseLighting in="n" result="light" lighting-color='#ff8000'>
+            <feDistantLight azimuth="45" elevation="60" filtername="feDistantLight"/>
+        </feDiffuseLighting>
+    </filter>
+
+
+    <rect fill='#ff8000' width='800' height='800' filter="url(#canvas)"/>
+    <circle cx="400" cy="800" r="900" fill="url(#background)" fill-opacity='0.4'/>
+    <rect x="0" y="0" width="800" height="800" fill="url(#background_block)" fill-opacity='0.4'/>
+
+
+    
+</svg>

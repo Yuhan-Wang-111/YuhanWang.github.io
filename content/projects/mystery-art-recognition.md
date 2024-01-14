@@ -9,7 +9,7 @@ cover:
   image: /img/projects/mystery-art-recognition/model_snippet.png
   alt: Mystery Art Object Recognition Models Snippet
   hidden: false
-author: ["Yuhan Wang", "Fall 2023"]
+author: ["Fall 2023"]
 hideMeta: false
 ---
 
