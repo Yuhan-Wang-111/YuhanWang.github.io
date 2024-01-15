@@ -1,6 +1,6 @@
 ---
 title: 'Bat Detection'
-date: 2024-01-07T22:22:15-05:00
+# date: 2024-01-07T22:22:15-05:00
 draft: false
 summary: "Biointerphase Team A - Fall 2023 AI Studio Project from Break Through Tech AI program at MIT."
 tags: ["project","machine learning","bat","MIT","Break Through Tech AI"]
@@ -10,6 +10,7 @@ cover:
   hidden: false
 author: ["Fall 2023"]
 hideMeta: false
+weight: 20
 ---
 Team A: Anders Freeman, Anusha Bandaru, Iris Yang, Linda Dominguez, Yuhan Wang
 

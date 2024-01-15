@@ -1,9 +1,10 @@
 ---
 title: 'Project #0'
-date: 2023-10-28T14:16:27.000Z
+# date: 2023-10-28T14:16:27.000Z
 draft: false
 tag: ["project"]
 showtoc: false
+weight: 40
 ---
 ![CS Cover Photo](/img/projects/p0/p0_cover.png)
 

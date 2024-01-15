@@ -1,6 +1,6 @@
 ---
 title: 'Brown ExploreCSR'
-date: 2023-11-18T15:47:40.000Z
+# date: 2023-11-18T15:47:40.000Z
 draft: false
 summary: "SVG creations from the exploreCSR program @Brown Spring 2023"
 tags: ["project","Brown","exploreCSR","svg","html","visual","creative design"]
@@ -10,6 +10,7 @@ cover:
   hidden: false
 author: ["Spring 2023"]
 hideMeta: false
+weight: 30
 ---
 
 ## Overview

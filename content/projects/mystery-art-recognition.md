@@ -1,6 +1,6 @@
 ---
 title: 'Mystery Art Object'
-date: 2023-12-22T22:22:29-05:00
+# date: 2023-12-22T22:22:29-05:00
 draft: false
 summary: "Final Project for MTH 353 Deep Learning Seminar & ARH 212 Ancient Cities and Sanctuaries"
 description: "Final Project for MTH 353 Deep Learning Seminar + ARH 212 Ancient Cities & Sanctuaries"
@@ -11,6 +11,7 @@ cover:
   hidden: false
 author: ["Fall 2023"]
 hideMeta: false
+weight: 10
 ---
 
 ## Brief Abstract
