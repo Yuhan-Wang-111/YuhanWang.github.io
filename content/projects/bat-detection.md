@@ -3,7 +3,7 @@ title: 'Bat Detection'
 # date: 2024-01-07T22:22:15-05:00
 draft: false
 summary: "Biointerphase Team A - Fall 2023 AI Studio Project from Break Through Tech AI program at MIT."
-tags: ["project","machine learning","bat","MIT","Break Through Tech AI"]
+tags: ["machine learning","bat"]
 cover:
   image: /img/projects/bat-detection/conf_mtx_wordcloud.png
   alt: Bat Detection Model Prediction Confusion Matrix Word Cloud

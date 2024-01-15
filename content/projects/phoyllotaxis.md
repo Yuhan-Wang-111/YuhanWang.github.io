@@ -4,7 +4,7 @@ title : 'TDA on Phoyllotaxis Plants'
 draft : false
 summary: "Apply Topological Data Analysis on the study of Phyllotaxis plant patterns in Prof. Christophe Golé's lab"
 description: "Apply Topological Data Analysis on the study of Phyllotaxis plant patterns in Prof. Christophe Golé's lab"
-tags: ["project","plant","Topological Data Analysis","visual"]
+tags: ["plant","Topological Data Analysis","visual","research","interdisciplinary"]
 cover:
   image: /img/projects/phyllotaxis/hexagons.png
   alt: Heatmap from TDA results

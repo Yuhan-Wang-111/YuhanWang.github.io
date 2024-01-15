@@ -4,7 +4,7 @@ title: 'Mystery Art Object'
 draft: false
 summary: "Final Project for MTH 353 Deep Learning Seminar & ARH 212 Ancient Cities and Sanctuaries"
 description: "Final Project for MTH 353 Deep Learning Seminar + ARH 212 Ancient Cities & Sanctuaries"
-tags: ["project","machine learning","art history","image recognition"]
+tags: ["machine learning","art history","image recognition","interdisciplinary"]
 cover:
   image: /img/projects/mystery-art-recognition/model_snippet.png
   alt: Mystery Art Object Recognition Models Snippet
