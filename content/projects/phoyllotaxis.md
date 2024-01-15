@@ -1,5 +1,5 @@
 ---
-title : 'TDA on Phoyllotaxis Plants'
+title : 'TDA on Phoyllotaxis'
 # date : 2024-01-14T21:36:42-05:00
 draft : false
 summary: "Apply Topological Data Analysis on the study of Phyllotaxis plant patterns in Prof. Christophe Golé's lab"
