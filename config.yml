@@ -28,7 +28,7 @@ params:
     - name: "instagram"
       url: "https://www.instagram.com/yaaaarth/"
     - name: "cv"
-      url: "/content/cv.md"
+      url: "/pdf/Curriculum_Vitae_Yuhan_Wang.pdf"
 
   author: ["Yuhan Wang"]
 
