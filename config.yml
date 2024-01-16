@@ -59,6 +59,10 @@ params:
     apple_touch_icon: "/favicon.io/apple-touch-icon.png"
     safari_pinned_tab: "/favicon.io/safari-pinned-tab.svg"
 
+  
+  label:
+    icon: "/img/profile/logo.svg"
+
 menu:
   main:
     # - identifier: home
