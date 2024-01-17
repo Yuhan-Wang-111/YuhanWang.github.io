@@ -17,10 +17,11 @@
   padding: 7px;
 }
 
-.column img {
+.imgbox {
   margin-top: 6px;
   vertical-align: middle;
-}  
+  display: none; /* Hide all elements by default */
+}
 
 @media screen and (max-width: 600px) {
   .column {
@@ -39,17 +40,18 @@
 }
 
 /* Style the buttons */
-.btn {
+.bttn {
   font-size:18px;
-  text-decoration: underline;
   font-weight: normal;
+  text-decoration: none;
+  text-decoration: underline;
 }
 
-.btn:hover {
+.bttn:hover {
   text-decoration: overline;
 }
 
-.btn.active {
+.bttn.active{
   text-decoration: overline;
   font-weight:bold;
 }
@@ -60,87 +62,185 @@
   <header class="post-header">
     <h1 align="center" class="post-title" >𝔾𝔸𝕃𝕃𝔼ℝ𝕐</h1>
   </header>
-  <div id="buttonContainer" align="center">
+  <div id="buttonContainer" style="text-align:center">
     A 
-    <button class="btn active" onclick="filterSelection('all')">collection</button> 
+    <button class="bttn active" onclick="filterSelection('all')">collection</button> 
     of my 
-    <button class="btn" style="color:rgb(62, 148, 45)" onclick="filterSelection('artworks')">artworks</button>
+    <button class="bttn" style="color:rgb(62, 148, 45)" onclick="filterSelection('artworks')">artworks</button>
     , 
-    <button class="btn" style="color:#3e60a3" onclick="filterSelection('digital')">digital creations</button>
+    <button class="bttn" style="color:#3e60a3" onclick="filterSelection('digital')">digital creations</button>
     , and 
-    <button class="btn" style="color:#c04aa2" onclick="filterSelection('handicrafts')">handicrafts</button>
+    <button class="bttn" style="color:#c04aa2" onclick="filterSelection('handicrafts')">handicrafts</button>
     !
   </div>
   <div class="row">
-    <div class="column artworks">
-      <img src="/img/gallery/artworks/seat.jpg">
-      <img src="/img/gallery/artworks/line_art.jpeg">
-      <img src="/img/gallery/artworks/fans.JPG">
-      <img src="/img/gallery/artworks/seals.jpg">
-      <img src="/img/gallery/artworks/fans_draw.JPG">
-      <img src="/img/gallery/artworks/faces.png">
-      <img src="/img/gallery/artworks/my_collection.JPG">
-      <img src="/img/gallery/artworks/campus_map.jpg">
-      <img src="/img/gallery/artworks/xin_jing.JPG">
-      <img src="/img/gallery/artworks/map.jpeg">
-      <img src="/img/gallery/artworks/tulip.JPG">
-      <img src="/img/gallery/artworks/boymother1.JPG">
-      <img src="/img/gallery/artworks/boymother2.JPG">
-      <img src="/img/gallery/artworks/goofy.jpeg">
-      <img src="/img/gallery/artworks/xingshu.JPG">
-      <img src="/img/gallery/artworks/black_space.JPG">
-      <img src="/img/gallery/artworks/nurseshavehair.JPG">
+    <div class="column">
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/seat.jpg">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/svg_bg_p2.svg">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/barnsley.jpeg">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/line_art.jpeg">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/DTI_blender.PNG">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/pumpkin.jpeg">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/fans.JPG">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/svg_bg_p6e.svg">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/box.jpeg">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/seals.jpg">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/Delaunay_length_100_600_xy.PNG">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/season.jpg">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/fans_draw.JPG">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/Poster_ Lantern Festival.PNG">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/poster.jpg">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/faces.png">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/hw8-screenshot.png">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/sc.JPG">
+      </div>
     </div>
-    <div class="column digital">
-      <img src="/img/gallery/digital/svg_bg_p2.svg">
-      <img src="/img/gallery/digital/game_Night.PNG">
-      <img src="/img/gallery/digital/DTI_blender.PNG">
-      <img src="/img/gallery/digital/tda_perdiodicity_100_300_hexagon!.PNG">
-      <img src="/img/gallery/digital/Poster_ Lantern Festival.PNG">
-      <img src="/img/gallery/digital/Chess.png">
-      <img src="/img/gallery/digital/svg_prototype.svg">
-      <img src="/img/gallery/digital/svg_bg_p6e.svg">
-      <img src="/img/gallery/digital/halloween.PNG">
-      <img src="/img/gallery/digital/svg_bg_p6b.svg">
-      <img src="/img/gallery/digital/Delaunay_length_100_600_xy.PNG">
-      <img src="/img/gallery/digital/hw2_ creative design.png">
-      <img src="/img/gallery/digital/hw8-screenshot.png">
-      <img src="/img/gallery/digital/gradients.svg">
-      <img src="/img/gallery/digital/tda_megatile_100_600_xy.PNG">
-      <img src="/img/gallery/digital/chiny.PNG">
-      <img src="/img/gallery/digital/delaunay_angle_100_600_xy.PNG">
-      <img src="/img/gallery/digital/heart.svg">
-    </div>    
-    <div class="column handicrafts">
-      <img src="/img/gallery/handicrafts/barnsley.jpeg">
-      <img src="/img/gallery/handicrafts/pumpkin.jpeg">
-      <img src="/img/gallery/handicrafts/season.jpg">
-      <img src="/img/gallery/handicrafts/vessel.jpeg">
-      <img src="/img/gallery/handicrafts/polarcase.JPG">
-      <img src="/img/gallery/handicrafts/sc.JPG">
-      <img src="/img/gallery/handicrafts/cats.JPG">
-      <img src="/img/gallery/handicrafts/poster.jpg">
-      <img src="/img/gallery/handicrafts/box.jpeg">
-      <img src="/img/gallery/handicrafts/compcase.jpeg">
-      <img src="/img/gallery/handicrafts/bag1.JPG">
-      <img src="/img/gallery/handicrafts/hammer.jpeg">
-      <img src="/img/gallery/handicrafts/tooth.JPG">
-      <img src="/img/gallery/handicrafts/hat.jpeg">
-      <img src="/img/gallery/handicrafts/crochet_bag.jpeg">
-      <img src="/img/gallery/handicrafts/smile.JPG">
-      <img src="/img/gallery/handicrafts/button.png">
-      <img src="/img/gallery/handicrafts/fish.JPG">
-      <img src="/img/gallery/handicrafts/rainbow.JPG">
+    <div class="column">
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/my_collection.JPG">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/svg_prototype.svg">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/crochet_bag.jpeg">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/campus_map.jpg">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/tda_megatile_100_600_xy.PNG">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/cats.JPG">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/xin_jing.JPG">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/game_Night.PNG">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/vessel.jpeg">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/map.jpeg">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/svg_bg_p6b.svg">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/compcase.jpeg">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/tulip.JPG">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/tda_perdiodicity_100_300_hexagon!.PNG">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/bag1.JPG">
+      </div>
+    </div>
+    <div class="column">
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/boymother1.JPG">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/hw2_ creative design.png">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/hammer.jpeg">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/boymother2.JPG">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/Chess.png">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/tooth.JPG">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/goofy.jpeg">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/gradients.svg">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/hat.jpeg">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/xingshu.JPG">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/delaunay_angle_100_600_xy.PNG">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/polarcase.JPG">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/black_space.JPG">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/chiny.PNG">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/smile.JPG">
+      </div>
+      <div class="imgbox artworks">
+        <img src="/img/gallery/artworks/nurseshavehair.JPG">
+      </div>
+      <div class="imgbox digital">
+        <img src="/img/gallery/digital/halloween.PNG">
+      </div>
+      <div class="imgbox handicrafts">
+        <img src="/img/gallery/handicrafts/fish.JPG">
+      </div> 
     </div>
   </div>
 
-    
 
 <script>
   filterSelection("all")
   function filterSelection(c) {
     var x, i;
-    x = document.getElementsByClassName("column");
+    x = document.getElementsByClassName("imgbox");
     if (c == "all") c = "";
     for (i = 0; i < x.length; i++) {
       removeClass(x[i], "show");
@@ -169,14 +269,13 @@
     element.className = arr1.join(" ");
   }
   
-  
   // Add active class to the current button (highlight it)
-  var buttonContainer = document.getElementById("ButtonContainer");
-  var btns = buttonContainer.getElementsByClassName("btn");
+  var buttonContainer = document.getElementById("buttonContainer");
+  var btns = buttonContainer.getElementsByClassName("bttn");
   for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
+    btns[i].addEventListener("click", function() {
       var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
+      current[1].className = current[1].className.replace(" active", "");
       this.className += " active";
     });
   }
