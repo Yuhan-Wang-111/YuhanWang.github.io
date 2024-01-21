@@ -16,6 +16,11 @@ weight: 35
 ## Overview
 This project is the part that I was mostly involved in as a research assistant in Prof. Christophe Golé's Phyllotaxis Plant lab. Phyllotaxis is the arrangement of plant organs on a stem, and we are studying the Fibonacci ones from the Quasi Symmtery ones, the latter being more irregular. By applying topological data analysis on phyllotaxis, we can measure and quantify the irregularity of both kinds.
 
+This is an example species,and how we unroll the plant, generate triangulation of the points to output the data for analyisis.
+{{< figure width="800" alt="plant example and its unrolled data" src=/img/projects/phyllotaxis/tripetala.png >}}
+
+---
+## Topological Data Analysis
 
 
 
