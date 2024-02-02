@@ -27,17 +27,16 @@ Apart from real plant data, we also have a Python simulation model, a disk stack
 ### TDA based on periodicity
 To perform TDA on the plant data, we will generate a brave lattice from the points. A brave lattice is a regular pointcloud, which can be represented by 2 vectors, u & v, both being unit vectors. To generate a brave lattice, the 1st attempt we used is to remove points from the disk stacking model based on certain pattern. According to Prof. Golé's prior study, disk stacking model generated under different circumstances have different periodicity, meaning that the model will have a pattern repeating after certain points, so we can keep the points of the model by period, which will generate a regular pattern. With this pattern, we will use TDA to measure the difference between the original model and the brave lattice we generated, to quantify irregularity in different areas.
 
-{{}}
+{{< figure width="800" alt="Example Disk Stacking model" caption="Example Disk Stacking Model" align="center" src=/img/projects/phyllotaxis/example_disk.png >}}
+As you can see here, left is the bottom of a disk stacking, and right is the top. After stacking disks to the top, we will have a regular pattern. The top "front" of the model is consisted of points that forms up and down parastiches. The product of up and down vectors is the periodicity of this model.
 
 ### TDA from megatile
 Theere is a limitation in our first approach. TDA studies the geometry of pointcloud, but since we are removing points to form a brave lattice, we might have removed features in the original pointcloud that is what TDA is interested in. To make sure we keep as many details as we can, we designed a second variation. A fact about the disk stacking model is that disks at the bottom of the model represent the early stage of plant growth, which is unstable and does not have a clear period. Based on this fact, we can create a "megatile" that is a power set of the points in the last period. Since a period of points have up and down vectors, we will create a up_vectors * down_vectors point cloud that is regular as well, and use TDA to measure the difference between the bottom disks with this regular pattern generated from the top disks. This variation allows us to preserve geometric features of the disk model.
 
-{{}}
+{{< figure width="800" alt="Megatile Example" caption="Megatile Example: we form a power set of the up and down vectors, and then generate points accordingly as 1 megatile. In this TDA variation, we use 4*4 megatile as the regular pattern to compare with the original model." align="center" src=/img/projects/phyllotaxis/megatile.png >}}
 
 ### Delaunay Triangulation
 The last variation is different from the previous 2, where we compare the original pointcloud to a regular pattern, and see how different they are. Though we have preserved a good amount of geometric features, we are still not looking at the entire model. Because of this, we decided to apply delaunay triangulation of the whole disk stacking model, and then record the differences between the sides and angles of whole the triangulation. This would take the whole pointcloud into consideration.
-
-{{}}
 
 ---
 ## TDA on real specices
